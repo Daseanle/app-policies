@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SubAI - Support Center</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #1d1d1f;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 42px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #86868b;
+            margin-bottom: 40px;
+            font-size: 18px;
+        }
+
+        h2 {
+            color: #1d1d1f;
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #667eea;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+
+        .faq-item {
+            background: #f5f5f7;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border-left: 3px solid #667eea;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-box h2 {
+            color: white;
+            border: none;
+            margin-top: 0;
+            padding-left: 0;
+        }
+
+        .contact-box a {
+            color: white;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #d2d2d7;
+            color: #86868b;
+            font-size: 14px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🤖 SubAI Support</h1>
+        <p class="subtitle">AI Subscription Manager - Help Center</p>
+
+        <h2>📱 About SubAI</h2>
+        <p>SubAI is the ultimate subscription tracker designed specifically for the AI era. Track ChatGPT, Midjourney,
+            Claude, and 100+ AI services with ease.</p>
+
+        <ul class="feature-list">
+            <li><strong>Instant Yearly Projection:</strong> See exactly how much you're spending on AI tools per year
+            </li>
+            <li><strong>Smart Reminders:</strong> Get notified 3 days before each payment</li>
+            <li><strong>Cancel Alerts:</strong> Never forget to cancel a trial subscription</li>
+            <li><strong>Privacy First:</strong> All data stays on your device</li>
+            <li><strong>18 Languages:</strong> Fully localized for global users</li>
+        </ul>
+
+        <h2>❓ Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>Q1: How do I add a new subscription?</h3>
+            <p><strong>A:</strong> Tap the blue "+" button at the bottom of the home screen. Select a category (AI
+                Tools, Streaming, etc.), enter the name, amount, and due date. SubAI will automatically calculate your
+                yearly spending.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q2: Can I track non-AI subscriptions?</h3>
+            <p><strong>A:</strong> Absolutely! While SubAI is optimized for AI services, you can track any subscription:
+                Netflix, Spotify, gym memberships, cloud storage, and more.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q3: How do reminders work?</h3>
+            <p><strong>A:</strong> SubAI sends you a notification 3 days before each subscription payment is due. You
+                can also set custom "cancel reminders" for trial subscriptions to avoid unwanted charges.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q4: Is my data private?</h3>
+            <p><strong>A:</strong> Yes! All your subscription data is stored locally on your device using Apple's secure
+                SwiftData framework. We use optional iCloud sync for backup, but we never see or access your data.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q5: Does SubAI support multiple currencies?</h3>
+            <p><strong>A:</strong> Yes! SubAI automatically uses your device's regional currency settings. You can enter
+                amounts in any currency, and the app will display them correctly.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q6: How do I delete a subscription?</h3>
+            <p><strong>A:</strong> Tap on any subscription card, then tap the "..." menu button in the bottom right.
+                Select "Delete" from the menu. The subscription will be moved to trash (you can restore it from Settings
+                if needed).</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q7: Can I export my data?</h3>
+            <p><strong>A:</strong> Yes! Go to Settings → Data Management → Export to CSV. You can then open the file in
+                Excel, Google Sheets, or any spreadsheet app.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q8: What's the "Yearly Projection" feature?</h3>
+            <p><strong>A:</strong> SubAI automatically calculates how much each subscription costs you per year based on
+                its billing cycle (weekly, monthly, quarterly, or yearly). This helps you see the true cost of your
+                subscriptions.</p>
+        </div>
+
+        <h2>🌍 Supported Languages</h2>
+        <p>SubAI is fully localized in 18 languages:</p>
+        <p>English, 简体中文, 繁體中文, 日本語, 한국어, Deutsch, Français, Español, Italiano, Português, Русский, العربية, Türkçe,
+            Tiếng Việt, ไทย, Bahasa Indonesia, Nederlands, हिन्दी</p>
+
+        <h2>💡 Tips & Tricks</h2>
+        <ul class="feature-list">
+            <li>Set reminders for trial subscriptions to cancel before you get charged</li>
+            <li>Use the "Notes" field to store account usernames or cancellation links</li>
+            <li>Check your yearly projection regularly to identify subscriptions you can cancel</li>
+            <li>Enable Face ID lock in Settings for extra privacy</li>
+            <li>Use custom background images to personalize your app</li>
+        </ul>
+
+        <div class="contact-box">
+            <h2>📧 Need More Help?</h2>
+            <p>Have questions, bug reports, or feature requests?</p>
+            <p><strong>Email:</strong> <a href="mailto:dasean@yeah.net">dasean@yeah.net</a></p>
+            <p style="margin-top: 20px;">We typically respond within 24 hours.</p>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Kunlun Growth. All rights reserved.</p>
+            <p>SubAI - Take Control of Your AI Subscription Spending</p>
+        </div>
+    </div>
+</body>
+
+</html>
