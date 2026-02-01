@@ -6,50 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - AI Resume Pro</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #e0e0e0;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            /* Deep Business Blue */
+            padding: 20px;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         h1 {
-            color: #2563EB;
+            color: #60A5FA;
+            /* Brand Blue */
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #94A3B8;
+            margin-bottom: 40px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: #E2E8F0;
+            font-size: 20px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #3B82F6;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #CBD5E1;
         }
 
         .button {
-            display: inline-block;
-            background: #2563EB;
+            display: block;
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(90deg, #3B82F6 0%, #2563EB 100%);
             color: white;
-            padding: 10px 20px;
+            padding: 16px;
             text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #F1F5F9;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: #94A3B8;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #64748B;
+            font-size: 13px;
         }
     </style>
 </head>
 
 <body>
-    <h1>AI Resume Pro Support</h1>
-    <p>Need help creating the perfect resume? We are here to assist you.</p>
+    <div class="container">
+        <h1>AI Resume Pro</h1>
+        <p class="subtitle">Help Center & Support</p>
 
-    <h2>Frequently Asked Questions</h2>
+        <p style="text-align: center; margin-bottom: 40px;">
+            Having trouble? We're here to help you build the perfect resume.
+        </p>
 
-    <h3>How do I export my resume?</h3>
-    <p>Once you have generated your resume content using AI, tap the "Generate Resume" button, then tap the "Export PDF"
-        button at the top right of the preview screen.</p>
+        <div class="faq-item">
+            <div class="faq-question">How do I export my resume?</div>
+            <p class="faq-answer">After generating your resume content, tap the 'Generate Resume' button. Once
+                generated, an 'Export PDF' button will appear at the top right of the preview card.</p>
+        </div>
 
-    <h3>Is my data private?</h3>
-    <p>Yes. All your personal data is stored locally on your device. We do not store your resume on our servers.</p>
+        <div class="faq-item">
+            <div class="faq-question">Is my resume data private?</div>
+            <p class="faq-answer">Yes, absolutely. Your data is stored locally on your device. We do not keep copies of
+                your resumes on our servers.</p>
+        </div>
 
-    <h3>How do I cancel my subscription?</h3>
-    <p>You can manage your subscriptions in your iPhone Settings -> Apple ID -> Subscriptions.</p>
+        <div class="faq-item">
+            <div class="faq-question">How do I verify a purchase?</div>
+            <p class="faq-answer">If you purchased credits but don't see them, tap the 'Restore Purchases' button on the
+                paywall screen.</p>
+        </div>
 
-    <h2>Contact Us</h2>
-    <p>If you have further questions, please email our support team:</p>
-    <a href="mailto:support@airesumepro.app" class="button">Email Support</a>
+        <a href="mailto:dasean@yeah.net" class="button">Contact Support Team</a>
+
+        <div class="footer">
+            <p>© 2026 AI Resume Pro. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 
 </html>

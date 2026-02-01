@@ -6,47 +6,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - AI Resume Pro</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #e0e0e0;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            /* Deep Business Blue */
+            padding: 20px;
+        }
+
+        .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            color: #333;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         h1 {
-            color: #2563EB;
+            color: #60A5FA;
+            /* Brand Blue */
+            font-size: 32px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #94A3B8;
+            margin-bottom: 40px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         h2 {
+            color: #E2E8F0;
+            font-size: 22px;
             margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3B82F6;
+            padding-left: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #CBD5E1;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #CBD5E1;
+        }
+
+        strong {
+            color: #60A5FA;
+        }
+
+        a {
+            color: #3B82F6;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        a:hover {
+            color: #60A5FA;
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background: rgba(59, 130, 246, 0.1);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #64748B;
+            font-size: 13px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Privacy Policy</h1>
-    <p>Last updated: February 1, 2026</p>
+    <div class="container">
+        <h1>AI Resume Pro</h1>
+        <p class="subtitle">Privacy Policy</p>
 
-    <p><strong>AI Resume Pro</strong> ("we", "our", "us") respects your privacy. This Privacy Policy explains how we
-        handle your information.</p>
+        <div class="highlight">
+            <p><strong>Your Privacy comes First.</strong> We built AI Resume Pro to be a private, secure tool.
+                We <strong>DO NOT</strong> store your generated resumes on our servers. Your career data belongs to you.
+            </p>
+        </div>
 
-    <h2>1. Data Collection</h2>
-    <p>We do not collect, store, or share any personal identifiable information (PII). All resume data (name, email,
-        phone, experience) is processed locally on your device or temporarily sent to our AI provider
-        (OpenRouter/DeepSeek) solely for the purpose of generating content. We do not save this data on our servers.</p>
+        <h2>1. Data Collection</h2>
+        <p>We believe in data minimization. Here is what we collect:</p>
+        <ul>
+            <li><strong>Input Data:</strong> The text you input (job title, experience, skills) is processed temporarily
+                to generate your resume content. It is <strong>NOT</strong> used to train our AI models.</li>
+            <li><strong>Usage Data:</strong> Anonymous analytics (e.g., number of resumes generated) to help us improve
+                app stability.</li>
+        </ul>
 
-    <h2>2. AI Processing</h2>
-    <p>To provide resume generation features, user inputs are sent to third-party AI service providers. These providers
-        are not permitted to use your data for training their models.</p>
+        <h2>2. AI Processing</h2>
+        <p>To provide high-quality resume suggestions, we transmit anonymized text data to our AI provider
+            (OpenRouter/DeepSeek). This data is:</p>
+        <ul>
+            <li><strong>Encrypted</strong> in transit (HTTPS).</li>
+            <li><strong>Not retained</strong> by the AI provider for model training.</li>
+            <li><strong>Transient</strong>: Only used for the duration of the request.</li>
+        </ul>
 
-    <h2>3. Local Storage</h2>
-    <p>Your resume data is stored locally on your device. You have full control over your data and can delete it by
-        reinstalling the app or clearing app data.</p>
+        <h2>3. Local Storage</h2>
+        <p>All your finalized resume data (PDFs, saved profiles) is stored <strong>locally on your device</strong> using
+            secure iOS storage sandboxing.</p>
 
-    <h2>4. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at: support@airesumepro.app</p>
+        <h2>4. Contact Us</h2>
+        <p>If you have any questions, please contact us at: <a href="mailto:dasean@yeah.net">dasean@yeah.net</a></p>
+
+        <div class="footer">
+            <p>Last updated: February 1, 2026</p>
+            <p>© 2026 AI Resume Pro. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 
 </html>
