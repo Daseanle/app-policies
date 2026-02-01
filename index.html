@@ -4,156 +4,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Policies & Support | Kunlun Growth</title>
+    <title>App Support Center | Kunlun Growth</title>
     <style>
+        :root {
+            --bg-color: #000000;
+            --card-bg: #1c1c1e;
+            --text-primary: #ffffff;
+            --text-secondary: #86868b;
+            --accent-blue: #2997ff;
+            --accent-purple: #bf5af2;
+            --accent-green: #30d158;
+            --accent-orange: #ff9f0a;
+        }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 40px 20px;
             text-align: center;
-            background-color: #fbfbfd;
-            color: #1d1d1f;
         }
 
         h1 {
-            font-size: 42px;
+            font-size: 48px;
             font-weight: 700;
-            margin-bottom: 50px;
-            letter-spacing: -0.5px;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+            background: linear-gradient(120deg, #fff, #888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .section-title {
-            font-size: 14px;
-            text-transform: uppercase;
-            color: #86868b;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-            font-weight: 600;
-            margin-top: 40px;
+        p.subtitle {
+            color: var(--text-secondary);
+            font-size: 20px;
+            max-width: 600px;
+            margin: 0 auto 60px;
+            font-weight: 400;
         }
 
-        .card-container {
+        .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-bottom: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 24px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .card {
-            background: #ffffff;
-            padding: 40px 30px;
-            border-radius: 18px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
-            border: 1px solid #e5e5ea;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: inherit;
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: left;
+            transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
 
         .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-            border-color: #007aff;
+            transform: scale(1.02);
+            background-color: #2c2c2e;
         }
 
-        .icon {
-            font-size: 40px;
-            margin-bottom: 15px;
+        .app-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: inline-block;
         }
 
-        h2 {
-            margin: 0;
-            font-size: 20px;
-            color: #1d1d1f;
+        .app-name {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
         }
 
-        p {
-            color: #86868b;
-            margin-top: 8px;
+        .app-desc {
+            color: var(--text-secondary);
             font-size: 15px;
+            line-height: 1.5;
+            flex-grow: 1;
+            margin-bottom: 24px;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+            margin-top: auto;
+        }
+
+        .link-btn {
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 8px 0;
+            transition: opacity 0.2s;
+        }
+
+        .link-privacy {
+            color: var(--text-secondary);
+        }
+
+        .link-support {
+            color: var(--accent-blue);
+        }
+
+        .link-btn:hover {
+            opacity: 0.7;
+        }
+
+        .category-tag {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.8);
         }
 
         footer {
             margin-top: 80px;
-            color: #86868b;
+            color: #424245;
             font-size: 13px;
-            border-top: 1px solid #e5e5ea;
-            padding-top: 30px;
         }
     </style>
 </head>
 
 <body>
-    <h1>Kunlun App Support Center</h1>
 
-    <div class="section-title">New Releases</div>
-    <div class="card-container">
-        <a href="social-guard-support.html" class="card">
-            <span class="icon">🛡️</span>
-            <h2>SocialGuard AI</h2>
-            <p>Support & FAQs</p>
-        </a>
-        <a href="gift-cover-support.html" class="card">
-            <span class="icon">🧨</span>
-            <h2>AI GiftCover</h2>
-            <p>Support & FAQs</p>
-        </a>
-    </div>
+    <h1>App Matrix</h1>
+    <p class="subtitle">Secure, Private, and Intelligent Utilities.</p>
 
-    <div class="section-title">HealthStack+</div>
-    <div class="card-container">
-        <a href="privacy.html" class="card">
-            <span class="icon">⚕️</span>
-            <h2>Privacy Policy</h2>
-            <p>Data security details</p>
-        </a>
-        <a href="support.html" class="card">
-            <span class="icon">💬</span>
-            <h2>Support & FAQ</h2>
-            <p>General Help</p>
-        </a>
-    </div>
+    <div class="grid">
+        <!-- AI Resume Pro -->
+        <div class="card">
+            <span class="category-tag" style="color: #60A5FA;">Productivity</span>
+            <div class="app-icon">📄</div>
+            <div class="app-name">AI Resume Pro</div>
+            <div class="app-desc">Professional CV builder powered by AI. Generate ATS-friendly resumes in seconds.</div>
+            <div class="links">
+                <a href="airesumepro-support.html" class="link-btn link-support">Support</a>
+                <a href="airesumepro-privacy.html" class="link-btn link-privacy">Privacy Policy</a>
+            </div>
+        </div>
 
-    <div class="section-title">LoanMaster</div>
-    <div class="card-container">
-        <a href="loanmaster-support.html" class="card">
-            <span class="icon">🏦</span>
-            <h2>Support & FAQ</h2>
-            <p>Usage guide & help</p>
-        </a>
-        <a href="loanmaster-privacy.html" class="card">
-            <span class="icon">🔒</span>
-            <h2>Privacy Policy</h2>
-            <p>Data protection</p>
-        </a>
-        <a href="loanmaster-terms.html" class="card">
-            <span class="icon">⚖️</span>
-            <h2>Terms of Service</h2>
-            <p>Usage agreements</p>
-        </a>
-    </div>
+        <!-- AuraLume Wealth -->
+        <div class="card">
+            <span class="category-tag" style="color: #FCD34D;">Lifestyle</span>
+            <div class="app-icon">🌟</div>
+            <div class="app-name">AuraLume Wealth</div>
+            <div class="app-desc">Spiritual wealth energy analysis and daily guidance for personal growth.</div>
+            <div class="links">
+                <a href="auralume-wealth-support.html" class="link-btn link-support">Support</a>
+                <a href="auralume-wealth-privacy.html" class="link-btn link-privacy">Privacy Policy</a>
+            </div>
+        </div>
 
-    <div class="section-title">ResetLife AI</div>
-    <div class="card-container">
-        <a href="resetlife-privacy.html" class="card">
-            <span class="icon">🔒</span>
-            <h2>Privacy Policy</h2>
-            <p>Data protection</p>
-        </a>
-        <a href="resetlife-terms.html" class="card">
-            <span class="icon">⚖️</span>
-            <h2>Terms of Use</h2>
-            <p>Usage agreements</p>
-        </a>
+        <!-- SSCalculator -->
+        <div class="card">
+            <span class="category-tag" style="color: #F472B6;">Utilities</span>
+            <div class="app-icon">🔢</div>
+            <div class="app-name">SSCalculator</div>
+            <div class="app-desc">Smart calculator with voice readout, history tape, and note-taking features.</div>
+            <div class="links">
+                <a href="xmcalculator-support.html" class="link-btn link-support">Support</a>
+                <a href="xmcalculator-privacy.html" class="link-btn link-privacy">Privacy Policy</a>
+            </div>
+        </div>
+
+        <!-- SnakeFortune -->
+        <div class="card">
+            <span class="category-tag" style="color: #34D399;">Entertainment</span>
+            <div class="app-icon">🐍</div>
+            <div class="app-name">SnakeFortune AI</div>
+            <div class="app-desc">Ancient wisdom meets modern AI. Daily fortune and palm reading analysis.</div>
+            <div class="links">
+                <a href="support.html" class="link-btn link-support">Support</a>
+                <a href="snake-privacy.html" class="link-btn link-privacy">Privacy Policy</a>
+            </div>
+        </div>
+
+        <!-- AI GiftCover -->
+        <div class="card">
+            <span class="category-tag" style="color: #F87171;">Design</span>
+            <div class="app-icon">🧧</div>
+            <div class="app-name">AI GiftCover</div>
+            <div class="app-desc">Create personalized red packet covers with generative AI.</div>
+            <div class="links">
+                <a href="gift-cover-support.html" class="link-btn link-support">Support</a>
+                <a href="gift-privacy.html" class="link-btn link-privacy">Privacy Policy</a>
+            </div>
+        </div>
+
+        <!-- LoanMaster -->
+        <div class="card">
+            <span class="category-tag" style="color: #818CF8;">Finance</span>
+            <div class="app-icon">🏦</div>
+            <div class="app-name">LoanMaster</div>
+            <div class="app-desc">Advanced loan calculator and amortization schedule planner.</div>
+            <div class="links">
+                <a href="loanmaster-support.html" class="link-btn link-support">Support</a>
+                <a href="loanmaster-privacy.html" class="link-btn link-privacy">Privacy Policy</a>
+            </div>
+        </div>
     </div>
 
     <footer>
-        &copy; 2026 Kunlun Growth. Premium Digital Supply Chain Solutions.
+        &copy; 2026 Kunlun Growth. All rights reserved. <br>
+        <span style="opacity: 0.5; margin-top: 10px; display: inline-block;">Premium Digital Experiences</span>
     </footer>
+
 </body>
 
 </html>
