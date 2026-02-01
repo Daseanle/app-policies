@@ -50,3 +50,9 @@ AppSupportSite/
 - 所有链接必须使用 `https://daseanle.github.io/app-policies/` 作为基础 URL
 - 修改后需要重新编译 iOS App 以更新链接
 - GitHub Pages 部署可能需要几分钟时间
+
+## 📧 联系方式
+
+如有问题，请联系：
+- **邮箱**: dasean@yeah.net
+- **网站**: https://daseanle.github.io/app-policies/
