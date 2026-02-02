@@ -56,3 +56,8 @@ AppSupportSite/
 如有问题，请联系：
 - **邮箱**: dasean@yeah.net
 - **网站**: https://daseanle.github.io/app-policies/
+
+## 💇‍♀️ HairStyle AI 相关页面
+
+- **隐私政策**: https://daseanle.github.io/app-policies/hairstyler-privacy.html
+- **支持页面**: https://daseanle.github.io/app-policies/hairstyler-support.html
