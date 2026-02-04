@@ -61,3 +61,8 @@ AppSupportSite/
 
 - **隐私政策**: https://daseanle.github.io/app-policies/hairstyler-privacy.html
 - **支持页面**: https://daseanle.github.io/app-policies/hairstyler-support.html
+
+## 👔 AI Headshot Pro 相关页面
+
+- **隐私政策**: https://daseanle.github.io/app-policies/aiheadshot-privacy.html
+- **支持页面**: https://daseanle.github.io/app-policies/aiheadshot-support.html
